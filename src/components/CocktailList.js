@@ -5,7 +5,11 @@ import { useGlobalContext } from '../context'
 
 const CocktailList = () => {
   const {cocktails, loading} = useGlobalContext();
-  }
+ //if we cannot fetch cocktails
+   if (loading) {
+    return <Loading/>
+   }
+   
   return (
     <div>
       <h2>cocktail list component</h2>
