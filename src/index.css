@@ -196,6 +196,20 @@ Error
   text-align: center;
   text-transform: capitalize;
 }
+
+/* 
+====== 
+Hero
+======
+*/
+.hero-img {
+  height: 20rem;
+  object-fit: cover;
+  border-top-left-radius: var(--mainBorderRadius);
+  border-top-right-radius: var(--mainBorderRadius);
+
+}
+
 /* 
 ====== 
 Cocktails List 
