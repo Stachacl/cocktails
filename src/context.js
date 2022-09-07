@@ -9,36 +9,45 @@ const AppProvider = ({ children }) => {
   const [searchTerm, setSearchTerm] = useState("a");
   const [cocktails, setCocktails] = useState([]);
 
-const fetchDrinks = async () => {
-  setLoading (true)
-  try {
-    const response = await fetch (`${url}${searchTerm}`)
-    const data = await response.json()
-    const {drinks} = data;
-    if(drinks) { //if drinks are not null
-    
+  const fetchDrinks = async () => {
+    setLoading(true);
+    try {
+      const response = await fetch(`${url}${searchTerm}`);
+      const data = await response.json();
+      const { drinks } = data;
+      if (drinks) {
+        //if drinks are not null
+        const newCocktails = drinks.map((item) => {
+          const { idDrink, strDrink, strDrinkThumb, strAlcoholic, strGlass } =
+            item;
+          return {
+            id: idDrink,
+            name: strDrink,
+            image: strDrinkThumb,
+            info: strAlcoholic,
+            glass: strGlass,
+          };
+        });
+      } else {
+        setCocktails([]);
+      }
+      setLoading(false);
+    } catch (error) {
+      console.log(error);
+      setLoading(false);
     }
-    else{
-      setCocktails([])
-    }
-    setLoading(false)
+  };
 
-  } catch (error) {
-    console.log(error)
-    setLoading(false)
-  }
-}
-
-useEffect(() => {
-fetchDrinks()
-}, [searchTerm])
+  useEffect(() => {
+    fetchDrinks();
+  }, [searchTerm]);
 
   return (
     <AppContext.Provider
-      value={{ 
-        loading, 
-        cocktails, 
-        setSearchTerm, 
+      value={{
+        loading,
+        cocktails,
+        setSearchTerm,
       }}
     >
       {children}
