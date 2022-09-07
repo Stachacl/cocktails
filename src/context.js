@@ -28,6 +28,7 @@ const AppProvider = ({ children }) => {
             glass: strGlass,
           };
         });
+        setCocktails(newCocktails);
       } else {
         setCocktails([]);
       }
