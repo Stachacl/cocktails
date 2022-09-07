@@ -12,12 +12,18 @@ const AppProvider = ({ children }) => {
 const fetchDrinks = async () => {
   setLoading (true)
   try {
-    const response = await fetch ()
+    const response = await fetch (`${url}${searchTerm}`)
+    const data = await response.json()
+    console.log(data)
 
   } catch (error) {
     console.log(error)
   }
 }
+
+useEffect(() => {
+fetchDrinks()
+}, [searchTerm])
 
   return (
     <AppContext.Provider
