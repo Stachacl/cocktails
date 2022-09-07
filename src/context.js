@@ -14,7 +14,13 @@ const fetchDrinks = async () => {
   try {
     const response = await fetch (`${url}${searchTerm}`)
     const data = await response.json()
-    console.log(data)
+    const {drinks} = data;
+    if(drinks) { //if drinks are not null
+    
+    }
+    else{
+      setCocktails([])
+    }
 
   } catch (error) {
     console.log(error)
