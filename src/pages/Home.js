@@ -8,14 +8,17 @@ const Home = () => {
       <div className="hero">
         <div className="container">
           <div className="row px-5 align-items-center">
-            <div className="col-7">
-              <p><small>Featured cocktail</small></p>
-              <h4>Black Lady</h4>
+            <div className="col-6">
+              <p><small>Featured</small></p>
+              <h4>Black Lady Cocktail</h4>
               <h6>Coupe glass</h6>
               <p> This striking cocktail gets its color from crème de noir and a creamy boost from an egg white shaken into the mix. The subtle, sweet perfume of blackberry is a perfect complement to herby gin. Together, they taste like the height of sophistication</p>
               <p>
                 <em>Alcoholic</em>
               </p>
+            </div>
+            <div className="col-1">
+
             </div>
             <div className="col-5">
               <img
