@@ -5,6 +5,7 @@ import logo from "../logo.svg";
 const Navbar = () => {
   return (
     <nav class="navbar navbar-expand-lg">
+    
       <div class="container">
         <Link to="/" class="navbar-brand">
           <img src={logo} alt="cocktail db logo" className="logo" />
@@ -22,9 +23,10 @@ const Navbar = () => {
                 <Link to="/about" class="nav-link">About</Link>
               </li>
             </ul>
-          </div>
+      
         </div>
       </div>
+    </div>
     </nav>
   );
 };
