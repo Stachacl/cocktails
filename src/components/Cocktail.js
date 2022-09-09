@@ -11,6 +11,7 @@ const Cocktail = ({ image, name, id, info, glass }) => {
         <h3>{name}</h3>
         <h5>{glass}</h5>
         <p>{info}</p>
+        <Link to={`/cocktail/${id}`} className="btn btn-primary btn-details"> See details</Link>
       </div>
     </article>
   );
