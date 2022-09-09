@@ -4,8 +4,13 @@ import { useGlobalContext } from '../context'
 const SearchForm = () => {
   const {setSearchTerm} = useGlobalContext()
   return (
-    <div>
-      <h2>search form component</h2>
+    <div class="container my-5">
+      <div class="row bg-light px-5 py-4 shadow">
+        <div class="col-4"><strong>search form component</strong></div>
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+        
+      </div>
     </div>
   )
 }
