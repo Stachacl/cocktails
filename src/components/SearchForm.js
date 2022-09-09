@@ -12,7 +12,12 @@ const SearchForm = () => {
 
   const searchCocktail = () => {
     setSearchTerm(searchValue.current.value);
-  };
+  }
+
+  //to prevent reloading if user press enter on the empty form
+  const handleSubmit = (e) => {
+    e.preventDefault()
+  }
   return (
     <div class="container my-5">
       <div class="row bg-light px-5 py-3 shadow">
@@ -22,7 +27,7 @@ const SearchForm = () => {
           </strong>
         </div>
         <div class="col-8">
-          <form class="col-8">
+          <form onSubmit={handleSubmit}>
             <input
               type="text"
               id="name"
