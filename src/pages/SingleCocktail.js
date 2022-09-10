@@ -75,11 +75,36 @@ const SingleCocktail = () => {
 
   return (
     <section className="container">
-      <div  className="row px-5">
-        <h2>Cocktail name: {name}</h2>
-        <div>
-          <img src={image} alt={name} />
-        </div>
+      <div className="row px-5">
+        <h2>Cocktail {name}</h2>
+          <div className="img-container mb-3">
+            <img src={image} alt={name} class="w-50"  />
+          </div>
+        <p>
+          <strong> Name : </strong>
+          {name}
+        </p>
+        <p>
+          <strong> Glass : </strong>
+          {glass}
+        </p>
+        <p>
+          <strong> Category: </strong>
+          {category}
+        </p>
+        <p>
+          <strong> Alcoholic : </strong>
+          {info}
+        </p>
+        <p>
+          <strong> Ingredients : </strong>
+          {ingredients}
+        </p>
+        <p>
+          <strong> Instructions : </strong>
+          {instructions}
+        </p>
+        <Link to='/' className="btn btn-secondary w-50"> back home </Link>
       </div>
     </section>
   );
