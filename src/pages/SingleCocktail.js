@@ -19,7 +19,7 @@ const SingleCocktail = () => {
           //destructuring data, choosing what to display from data base:
           const {
             strDrink: name,
-            stDrinkThumb: image,
+            strDrinkThumb: image,
             strAlcoholic: info,
             strCategory: category,
             strGlass: glass,
@@ -37,16 +37,20 @@ const SingleCocktail = () => {
             strIngredient3,
             strIngredient4,
             strIngredient5,
-          ]
+          ];
           //set new cocktail function
 
           const newCocktail = {
-            name, image, info, category, glass, instructions, ingredients,
-          }
+            name,
+            image,
+            info,
+            category,
+            glass,
+            instructions,
+            ingredients,
+          };
 
-          setCocktail(newCocktail)
-        
-
+          setCocktail(newCocktail);
         } else {
           setCocktail(null);
         }
@@ -59,20 +63,25 @@ const SingleCocktail = () => {
     getCocktail();
   }, [id]);
 
-  if(loading) {
-    return <Loading/>
+  if (loading) {
+    return <Loading />;
   }
   //checking if the id is correct and the cocktail is exist in data base. If not, then:
-  if(!cocktail) {
-    return <h2> no cocktails to display, try another one</h2>
+  if (!cocktail) {
+    return <h2> no cocktails to display, try another one</h2>;
   }
-  const {name, image, info, category, glass, instructions, ingredients} = cocktail;
+  const { name, image, info, category, glass, instructions, ingredients } =
+    cocktail;
 
   return (
-
-    <div>
-      <h2>{name}</h2>
-    </div>
+    <section className="container">
+      <div  className="row px-5">
+        <h2>Cocktail name: {name}</h2>
+        <div>
+          <img src={image} alt={name} />
+        </div>
+      </div>
+    </section>
   );
 };
 
