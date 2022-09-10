@@ -62,9 +62,16 @@ const SingleCocktail = () => {
   if(loading) {
     return <Loading/>
   }
+  //checking if the id is correct and the cocktail is exist in data base. If not, then:
+  if(!cocktail) {
+    return <h2> no cocktails to display, try another one</h2>
+  }
+  const {name, image, info, category, glass, instructions, ingredients} = cocktail;
+
   return (
+
     <div>
-      <h2>{id}</h2>
+      <h2>{name}</h2>
     </div>
   );
 };
