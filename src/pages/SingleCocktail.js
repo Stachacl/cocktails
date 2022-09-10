@@ -98,7 +98,9 @@ const SingleCocktail = () => {
         </p>
         <p>
           <strong> Ingredients : </strong>
-          {ingredients}
+          {ingredients.map((item,index) => {
+            return item? <p key={index}>{item}</p> : null
+          })}
         </p>
         <p>
           <strong> Instructions : </strong>
