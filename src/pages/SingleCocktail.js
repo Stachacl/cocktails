@@ -30,6 +30,16 @@ const SingleCocktail = () => {
             strIngredient4,
             strIngredient5,
           } = data.drinks[0];
+          //settingg up ingredients array:
+          const ingredients = [
+            strIngredient1,
+            strIngredient2,
+            strIngredient3,
+            strIngredient4,
+            strIngredient5,
+
+          ]
+
         } else {
           setCocktail(null);
         }
