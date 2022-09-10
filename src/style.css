@@ -10,3 +10,25 @@
     --bs-btn-color: #fff;
     --bs-btn-bg: #1d1d1d;
     --bs-btn-border-color: #1d1d1d;}
+
+
+      
+    .loader-glass {
+        transform: perspective(140px) rotateX(-45deg);
+        width: 45px;
+        height: 100px;
+        position: relative;
+        border: 3px solid #313132;
+        animation: load-glass 1.5s linear infinite alternate;
+      }
+
+      @keyframes load-glass {
+        0% {
+          box-shadow: 0 0 #2c2c2c inset;
+        }
+        100% {
+          box-shadow: 0 -100px #ed3b65 inset;
+        }
+      }
+      
+      

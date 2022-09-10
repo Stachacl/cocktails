@@ -4,12 +4,10 @@ const Loading = () => {
   return (
     <section className="container">
       <div className="row px-5">
-        <div class="text-center">
-          <div class="spinner-border" role="status">
-            <span class="visually-hidden">Loading...</span>
-          </div>
-        </div>
+          <div class="loader-glass"></div>
+          <div class="item"></div>
       </div>
+      <h3> Loading...</h3>
     </section>
   );
 };
