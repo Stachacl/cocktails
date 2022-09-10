@@ -16,6 +16,20 @@ const SingleCocktail = () => {
         const response = await fetch(`${url}${id}`);
         const data = await response.json();
         if (data.drinks) {
+          //destructuring data, choosing what to display from data base:
+          const {
+            strDrink: name,
+            stDrinkThumb: image,
+            strAlcoholic: info,
+            strCategory: category,
+            strGlass: glass,
+            strInstructions: instructions,
+            strIngredient1,
+            strIngredient2,
+            strIngredient3,
+            strIngredient4,
+            strIngredient5,
+          } = data.drinks[0];
         } else {
           setCocktail(null);
         }
