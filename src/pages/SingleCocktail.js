@@ -37,8 +37,15 @@ const SingleCocktail = () => {
             strIngredient3,
             strIngredient4,
             strIngredient5,
-
           ]
+          //set new cocktail function
+
+          const newCocktail = {
+            name, image, info, category, glass, instructions, ingredients,
+          }
+
+          setCocktail(newCocktail)
+        
 
         } else {
           setCocktail(null);
