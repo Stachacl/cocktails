@@ -8,7 +8,7 @@ const Home = () => {
       <div className="hero">
         <div className="container">
           <div className="row px-5 align-items-center">
-            <div className="col-6">
+            <div className="col-md-6">
               <p><small>Featured</small></p>
               <h4>Black Lady Cocktail</h4>
               <h6>Coupe glass</h6>
@@ -17,10 +17,12 @@ const Home = () => {
                 <em>Alcoholic</em>
               </p>
             </div>
-            <div className="col-1">
 
+            {/* empty container: */}
+            <div className="col-1">
             </div>
-            <div className="col-5">
+
+            <div className="col-md-5">
               <img
                 src="https://ik.imagekit.io/stcl/Drinks/black_cocktail_okXSP3nR0?ik-sdk-version=javascript-1.4.3&updatedAt=1662702948939"
                 alt="black colour cocktail"

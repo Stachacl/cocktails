@@ -19,7 +19,11 @@
         height: 100px;
         position: relative;
         border: 3px solid #313132;
-        animation: load-glass 1.5s linear infinite alternate;
+        animation: load-glass 1s linear infinite alternate;
+      }
+
+      .form-control {
+        border-radius: 0rem;
       }
 
       @keyframes load-glass {

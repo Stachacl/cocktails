@@ -31,6 +31,7 @@ const SearchForm = () => {
             <input
               type="text"
               id="name"
+              class="form-control"
               ref={searchValue}
               onChange={searchCocktail}
             />
