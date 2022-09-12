@@ -1,17 +1,23 @@
-import React from "react";
+import React, {useState} from "react";
 import { Link } from "react-router-dom";
 import logo from "../logo.svg";
 
 const Navbar = () => {
+
+  const [isNavExpanded, setIsNavExpended] = useState(false);
+
   return (
+
     <nav class="navbar navbar-expand-lg">
       <div class="container">
         <Link to="/" class="navbar-brand">
           <img src={logo} alt="the cocktail club est 1896" className="logo" />
         </Link>
 
-        <button
-          class="navbar-toggler"
+        <button onClick={(e) => {
+          setIsNavExpended (!isNavExpanded);
+        }}
+          className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
@@ -22,7 +28,10 @@ const Navbar = () => {
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <div className={ 
+          isNavExpanded? "navbar navbar-expand" : "collapse navbar-collapse"
+        }
+          id="navbarSupportedContent">
           <div class="w-100 d-flex justify-content-end">
             <ul class="navbar-nav mb-2 mb-lg-0">
               <li class="nav-item">
@@ -38,6 +47,25 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
+
+        {/* <div
+        className={
+          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
+        }
+      >
+        <ul>
+          <li>
+            <a href="/home">Home</a>
+          </li>
+          <li>
+            <a href="/about">About</a>
+          </li>
+          <li>
+            <a href="/contact">Contact</a>
+          </li>
+        </ul>
+      </div> */}
+
       </div>
     </nav>
   );
