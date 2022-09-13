@@ -28,12 +28,13 @@ const Navbar = () => {
           <span class="navbar-toggler-icon"></span>
         </button>
 
+
         <div className={ 
-          isNavExpanded? "navbar navbar-expand" : "collapse navbar-collapse"
+          isNavExpanded? "navbar-collapse collapse show" : "navbar-collapse collapse"
         }
           id="navbarSupportedContent">
           <div class="w-100 d-flex justify-content-end">
-            <ul class="navbar-nav mb-2 mb-lg-0">
+            <ul class="navbar-nav mb-2 mb-lg-0 me-1">
               <li class="nav-item">
                 <Link class="nav-link active" aria-current="page" to="/">
                   Home
@@ -47,25 +48,6 @@ const Navbar = () => {
             </ul>
           </div>
         </div>
-
-        {/* <div
-        className={
-          isNavExpanded ? "navigation-menu expanded" : "navigation-menu"
-        }
-      >
-        <ul>
-          <li>
-            <a href="/home">Home</a>
-          </li>
-          <li>
-            <a href="/about">About</a>
-          </li>
-          <li>
-            <a href="/contact">Contact</a>
-          </li>
-        </ul>
-      </div> */}
-
       </div>
     </nav>
   );

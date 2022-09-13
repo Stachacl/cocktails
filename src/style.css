@@ -35,4 +35,6 @@
         }
       }
       
+      .navbar-toggler {
+        --bs-navbar-toggler-border-radius: 0rem; }
       
