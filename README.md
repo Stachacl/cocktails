@@ -1,7 +1,6 @@
 # The Cocktail Club
 
-Coctail search app created with React, free CocktailDB API. 
-
+The cocktails search app created with React, free CocktailDB API. 
 Designed with Bootstrap.
 
 ## Contents
