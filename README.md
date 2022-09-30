@@ -1,6 +1,10 @@
 # cocktails
 simple React App
 
+Please view the result here:
+
+https://stachacl.github.io
+
 
 Netlify Status
 
