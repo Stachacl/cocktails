@@ -6,7 +6,7 @@ Designed with Bootstrap.
 ## Contents
 * [General Info](#general-info)
 * [Live Demo](#live-demo)
-* [Stack](#stack)
+* [Technologies](#technologies)
 * [Scope of Functionalities](#scope-of-functionalities)
 * [Sources](#sources)
 
@@ -19,10 +19,11 @@ https://stachacl.github.io/cocktails/
 
 <img src="https://ik.imagekit.io/stcl/github/Screen_Shot_cocktails_J6klTqg61.png?ik-sdk-version=javascript-1.4.3&updatedAt=1664511476112">
 
-## Stack
-Technologies I used:
+## Technologies
+Technologies I used for this project:
 - React 
-- Bootstrap 
+- Bootstrap, CSS
+
 
 ## Scope of Functionalities
 - Get a list of cocktails matching your search criteria
