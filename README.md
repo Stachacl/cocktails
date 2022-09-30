@@ -11,7 +11,7 @@ Designed with Bootstrap.
 * [Sources](#sources)
 
 ## General Info
-This project was made to practise fetching data from a third party API with React, using React Router DOM, setting search functionality.
+This project was made to practise fetching data from a third party API with React, use React Router DOM, setting search functionality.
 
 ## Live Demo
 Please view the result here:
