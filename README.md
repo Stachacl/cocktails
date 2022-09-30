@@ -3,7 +3,7 @@ simple React App
 
 Please view the result here:
 
-https://stachacl.github.io
+https://stachacl.github.io/cocktails/
 
 
 Netlify Status
